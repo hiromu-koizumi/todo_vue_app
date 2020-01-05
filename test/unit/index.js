@@ -1,3 +1,5 @@
+// 単体テストのエントリファイル。
+// テストランナkarmaによって起動したwebブラウザ環境で読み込まれることでテストが実行される。
 import Vue from 'vue'
 
 Vue.config.productionTip = false

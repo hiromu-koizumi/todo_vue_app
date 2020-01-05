@@ -1,3 +1,4 @@
+//ESLintの設定ファイル
 // https://eslint.org/docs/user-guide/configuring
 
 module.exports = {

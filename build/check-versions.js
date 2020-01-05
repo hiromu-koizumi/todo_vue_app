@@ -1,3 +1,4 @@
+//ビルドを実行する環境であるNode.jsとnpmのバージョンが、アプリケーションのpackage.jsonに定義されたNode.jsとnpmのバージョンが満たしているかどうかチェックするスクリプト
 'use strict'
 const chalk = require('chalk')
 const semver = require('semver')

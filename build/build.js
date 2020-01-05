@@ -1,3 +1,5 @@
+// アプリケーションを本番環境に配信するためのビルドスクリプト。
+// 本番環境向けにwebpackの設定されたwebpack.prod.config.jsと本番環境向けにビルド設定config/index.jsをもとにアプリケーションをビルドする。
 'use strict'
 require('./check-versions')()
 

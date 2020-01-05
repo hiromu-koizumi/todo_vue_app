@@ -1,3 +1,5 @@
+//Vue Loaderの設定。
+//PostCSS,Sass,Stylusなどの各種CSSプロセッサとimg要素やvideo要素などのsrc属性のような外部リソースのバンドリングをwebpackで処理するよう設定済み。
 'use strict'
 const utils = require('./utils')
 const config = require('../config')

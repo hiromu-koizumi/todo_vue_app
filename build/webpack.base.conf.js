@@ -1,3 +1,6 @@
+//webpackでアプリケーションをバンドリングするための共通設定ファイル。
+//webpack.dev.conf.js,webpack.text.conf.js,webpack.prod.conf.js,各種環境向けのwebpackの共通設定に使う。
+//アプリケーションのエントリポイントなどのwebpackで処理する際の基本的設定の他に、BabelによるJavaScriptのトランスパイル,ESLintによるコードのリント、画像などのアセットのDataURL化など、アプリケーションをバンドリングする際の基本的な設定が施されている。
 'use strict'
 const path = require('path')
 const utils = require('./utils')

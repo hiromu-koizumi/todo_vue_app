@@ -1,3 +1,4 @@
+//ビルド設定におけるユーティリティスクリプトモジュール
 'use strict'
 const path = require('path')
 const config = require('../config')

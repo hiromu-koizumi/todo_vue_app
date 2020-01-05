@@ -1,3 +1,8 @@
+//configファルダの説明
+//アプリケーションの設定情報を格納。テスト環境、開発環境、本番環境としてNODE_ENV環境変数経由で定義。
+//同ディレクトリのindex.jsにそれぞれ環境毎に設定でき、ビルドの一般的な設定が可能。
+
+//アプリケーションプロジェクトのメイン設定ファイル
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.

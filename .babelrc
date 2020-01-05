@@ -1,3 +1,4 @@
+//Babelの設定ファイル
 {
   "presets": [
     ["env", {

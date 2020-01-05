@@ -1,3 +1,4 @@
+# ESLintでリント対象を無視するための設定ファイル
 /build/
 /config/
 /dist/

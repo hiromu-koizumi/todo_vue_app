@@ -1,3 +1,4 @@
+//テスト環境向けのwebpack設定ファイル、単体テスト向けの設定が施されている。ソースマップはバンドリングとともにインライン化するよう設定が施されている。
 'use strict'
 // This is the webpack config used for unit tests.
 

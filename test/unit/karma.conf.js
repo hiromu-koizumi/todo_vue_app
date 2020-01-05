@@ -1,3 +1,7 @@
+// karmaとは、テストをwebブラウザ上で実行するためのテスト検証結果をレポートする機能を備えたテストランナ
+// テストを実行されるwebブラウザの指定や、カバレッジレポート、webpackの設定が可能。
+// webpackはbuild/webpack.test.conf.jsの設定を利用し、環境変数はconfig/test/env.jsの設定を利用し、環境変数はconfig/test.env.jsを利用する
+// テストランナKarmaの設定ファイル
 // This is a karma config file. For more details see
 //   http://karma-runner.github.io/0.13/config/configuration-file.html
 // we are also using it with karma-webpack
@@ -28,12 +32,12 @@ module.exports = function (config) {
     coverageReporter: {
       dir: './coverage',
       reporters: [{
-          type: 'lcov',
-          subdir: '.'
-        },
-        {
-          type: 'text-summary'
-        }
+        type: 'lcov',
+        subdir: '.'
+      },
+      {
+        type: 'text-summary'
+      }
       ]
     }
   })

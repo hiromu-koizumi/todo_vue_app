@@ -1,3 +1,4 @@
+// テストランナNightWatchの設定ファイル
 require('babel-register')
 var config = require('../../config')
 

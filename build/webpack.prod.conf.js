@@ -1,3 +1,6 @@
+//本番環境向けのwebpac向けの設定ファイル。
+//本番環境にリリースするための最適化するために、webpackのプラグイン等の設定が施されている。
+//例えば、バンドルする際に対象となるjavascript,CSS,HTMLを最小化による圧縮や、バンドル化されたCSSを抽出したり、ファイル分割を行ったりと、パフォーマンスが最大化されるよう最適化の様々な設定が施されている。
 'use strict'
 const path = require('path')
 const utils = require('./utils')

@@ -1,3 +1,4 @@
+<!--実行エントリポイントとなるコンポーネント-->
 <template>
   <!-- <ErrorBoundary id="app"> -->
   <router-view/>
