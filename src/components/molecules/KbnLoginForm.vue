@@ -55,6 +55,8 @@
 import KbnButton from '@/components/atoms/KbnButton.vue'
 // メールアドレスのフォーマットをチェックする正規表現
 const REGEX_EMAIL = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+// trim空白を自動的に取り除く。!!は二重否定。valが定義されていれば空白を取り除く処理
 const required = val => !!val.trim()
 
 export default {
@@ -80,12 +82,14 @@ export default {
     }
   },
 
-  // computedは算出プロパティ
+  // computedは算出プロパティ。データで保持している値に変更があるたびに呼び出される
   computed: {
     validation () { // emailとpasswordのバリデーション
+      console.log('validation')
       return {
         email: {
           required: required(this.email),
+          // testは正規表現と指定した文字列が一致しているか調べる
           format: REGEX_EMAIL.test(this.email)
         },
         password: {
@@ -93,10 +97,15 @@ export default {
         }
       }
     },
-
+    aeg () {
+      console.log('uuuuuuuuuuuuuuu')
+      return {email: required}
+    },
     // メールアドレスとパスワードが入力されるたびに呼び出される
     valid () {
-      console.log('ooiiiii')
+      console.log('valid')
+      console.log(this.validation)
+      // this.validationでvalidation()の結果を返している。呼び出されているわけではない。
       const validation = this.validation // 先に定義したvalidationを用いて可否を返す
       const fields = Object.keys(validation)
       let valid = true

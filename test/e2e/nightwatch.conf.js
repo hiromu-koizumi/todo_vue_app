@@ -7,6 +7,7 @@ module.exports = {
   output_folder: 'test/e2e/reports',
   custom_assertions_path: ['test/e2e/custom-assertions'],
   custom_commands_path: ['test/e2e/custom-commands'],
+
   selenium: {
     start_process: true,
     server_path: require('selenium-server').path,
