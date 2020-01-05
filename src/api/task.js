@@ -1,3 +1,4 @@
+// client.~でdbを操作している
 import client from './client'
 
 export default {
